@@ -1,0 +1,401 @@
+// -------------------------
+// header
+// -------------------------
+
+.container{
+    width: 100%;
+    height:110vh;
+    margin-top: 0px;
+    background-color: #2F80ED;
+    background-blend-mode: color-burn;
+}
+
+.bgImg{
+    height:100vh;
+    width:100vw;
+    mix-blend-mode: color-burn;
+    margin-top: 0px;
+}
+
+
+.headerContent{
+    width:92%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    
+}
+
+.contentHeading{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 3rem;
+line-height: 84px;
+color: #FFFFFF;
+text-align: center;
+margin-top: -4rem;
+margin-bottom: 2rem;
+}
+
+.innerContent{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contentCard{
+    background: #FFFFFF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 99px;
+    padding:0.6rem 1.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contentTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 35px;
+    margin-right:15px;
+    color: #232323;
+}
+
+.contentSubtitle{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 600;
+font-size: 1.2rem;
+line-height: 35px;
+color: #0052C1;
+}
+
+// ---------------------------------
+// PROCESS
+// -------------------------------------
+
+.container2{
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding:6rem 3rem;
+    background: #FAFAFA;
+    border-radius: 10px;
+}
+
+.processCard{
+    width:30%;
+    background: #001735;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding:2rem 0.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.processTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.3rem;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.processSubtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+// ---------------------------------
+// PACKAGE
+// --------------------------------
+
+.container3{
+    position: relative;
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(35, 35, 35, 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding:2.5rem 0rem;
+}
+.packageContainer{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+}
+.packages{
+   width:30%;
+   height:400px;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   padding:2rem 0;
+ }
+ .packageImg{
+     height:300px;
+     display:flex;
+     align-items: center;
+ }
+  .text{
+      width:250px;
+      display:flex;
+      align-items: center;
+      font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    word-wrap: break-word;
+    // background-color: blue;
+ }
+// -------------------------------------
+// Package list ----------
+// ------------------------------------
+.container5{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+}
+.packageList{
+    width:100%;
+    padding:1.1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #2F80ED;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.packageList span{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 1.7rem;
+line-height: 42px;
+text-align: center;
+color: #FFFFFF;
+z-index:2;
+}
+
+.spans{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.spans span{
+    width:50px;
+    height:50px;
+    background: #2F80ED;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    transform: rotate(45deg);
+    margin-top:-35px;
+    z-index:1;
+}
+.amount{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:2.1rem;
+}
+.amount span{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 1.5rem;
+line-height: 42px;
+text-align: center;
+color: #2F80ED;
+}
+
+// ----------------------------------------
+// Consultation
+// ----------------------------------------
+
+.container4{
+    width:90%;
+    margin:auto;
+    padding:3rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 59px;
+    color: #001735;
+}
+
+.consultSubtitle{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 1.5rem;
+line-height: 42px;
+color: #000000;
+}
+.consultButton{
+    background: #2F80ED;
+    border-radius: 10px;
+    padding:0.5rem 2.5rem;
+    outline: none;
+    border:none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 35px;
+}
+.contactImg{
+    position:relative;
+    right:40px;
+}
+
+//---------------------------------
+//Video
+//---------------------------------
+.container6{
+    width:100%;
+    background-color:#2F80ED;
+    padding:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    width:60%;
+    margin:auto;
+}
+
+// ------------------------------
+// Testimonial
+// ------------------------------
+
+.container7{
+    width:100%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FAFAFA;
+    padding:2.1rem 3rem;
+}
+.container7 h2{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 600;
+font-size: 2.5rem;
+line-height: 70px;
+text-align: center;
+color: #001735;
+}
+
+.testimonials{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.testimonialCard{
+    max-width:40%;
+    margin:auto;
+    padding:3rem 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    background: #FFFFFF;
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+}
+
+.top{
+    background: linear-gradient(90deg, #2F80ED 0%, #2FB4ED 100%);
+    border-radius: 0px 12px 12px 0px;
+    margin-left:-2rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top h3{
+    padding:0;
+    margin-left: auto;
+    margin-right: 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.pic{
+    position: absolute;
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+    margin-top:-4rem;
+}
+.body{
+    text-align: justify;
+    padding:3rem 1.5rem 1rem;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 1.3rem;
+line-height: 32px;
+color: #000000;
+opacity: 0.6;
+}
+.desig{
+    text-align: justify;
+    padding:0rem 1rem;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 1.25rem;
+line-height: 30px;
+color: #000000;
+}
+
+// -------------------------
+// TEAM
+// -----------------------
