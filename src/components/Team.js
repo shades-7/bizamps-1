@@ -1,12 +1,54 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Img from 'gatsby-image'
-
-import LeftArrow from "../assets/indexPage/LeftArrow"
-import RightArrow from "../assets/indexPage/RightArrow"
 
 import styles from '../stylesheets/team.module.scss'
 
 const Team = (props) => {
+
+    const [member,setMember]=useState([
+      {pic:props.mehvish,name:"Mehvish Diwan",designation:"Outreach Manager"},
+      {pic:props.anvishka,name:"Anviksha Kharbanda",designation:"Client success"},
+      {pic:props.shweta,name:"Shweta Chaurasia",designation:"Web Developer"}
+    ])
+    const [currentIndex,setCurrentIndex]=useState(0)
+    const [counter,setCounter]=useState(0)
+
+    useEffect(()=>{
+        setInterval(()=>{  
+          setCounter(prev=>prev+1)    
+        },1000)
+    },[])
+
+    useEffect(()=>{
+      if(counter%3===0&&counter!=0){
+        setCurrentIndex(prev=>prev===member.length-1?0:prev+1)
+      }
+    },[counter])
+
+    const previous=()=>{
+      if(currentIndex===0)
+      {
+        setCurrentIndex(member.length-1)
+        setCounter(0)
+      }
+      else{
+        setCurrentIndex(prev=>prev-1)
+        setCounter(0)
+      }
+    }
+
+    const next=()=>{
+      if(currentIndex===member.length-1)
+      {
+        setCurrentIndex(0)
+        setCounter(0)
+      }
+      else{
+        setCurrentIndex(prev=>prev+1)
+        setCounter(0)
+      }
+    }
+
     return (
         <div className={styles.teamContainer}>
         <div className={styles.founder}>
@@ -15,65 +57,16 @@ const Team = (props) => {
           <div className={styles.designation}>CEO & B2B Expert</div>
         </div>
         <div className={styles.team}>
-          <LeftArrow />
-          {/* <Img fluid={props.mehvish}/>
-          <Img fluid={props.anvishka} /> */}
-          <RightArrow />
+          <div onClick={previous} className={styles.arrow} >{"<"}</div>
+          <div >
+          <Img fluid={member[currentIndex].pic} className={styles.founderImg} />
+          <div className={styles.name}>{member[currentIndex].name} </div>
+          <div className={styles.designation}>{member[currentIndex].designation} </div>
+          </div>
+          <div onClick={next} className={styles.arrow} >{">"}</div>
         </div>
       </div>
     )
 }
 
 export default Team
-
-export const TeamQuery = graphql`
-  query {
-    mehvish: file(relativePath: { eq: "mehvish.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    bizampsLogo: file(relativePath: { eq: "bizampsLogo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    akshat: file(relativePath: { eq: "akshat.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    video: file(relativePath: { eq: "video1.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    conor: file(relativePath: { eq: "conor.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    gautam: file(relativePath: { eq: "gautam.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
