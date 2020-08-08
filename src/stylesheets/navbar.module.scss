@@ -64,21 +64,21 @@
      
     }
 
-    // @media(max-width:1320px)
-    // {
-    //     .nav{
-    //         display:none;
-    //     }
-    //     .navToggle{
-    //         display:flex;
-    //         flex-direction: column;
-    //     }
-    //     .navToggle span{
-    //         width:4rem;
-    //         height:5px;
-    //         background-color: white;
-    //         margin:5px;
-    //     }  
+    @media(max-width:1320px)
+    {
+        .nav{
+            display:none;
+        }
+        .navToggle{
+            display:flex;
+            flex-direction: column;
+        }
+        .navToggle span{
+            width:4rem;
+            height:5px;
+            background-color: white;
+            margin:5px;
+        }  
            
-    // }
+    }
   
