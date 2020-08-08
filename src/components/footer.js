@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className="footerContainer" >
             <div className="iconContainer">
-                <span className="icons"><Youtube className="youtube"/></span>
+                <span className="icons"><Youtube/></span>
                 <span className="icons"><Slideshare /></span>
                 <span className="icons"><Linkedin /></span>
                 <span className="icons"><Instagram /></span>

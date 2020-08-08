@@ -1,9 +1,11 @@
 import React from 'react'
+import styles from '../../stylesheets/index.module.scss'
+
 
 const Lead = () => {
     return (
         <>
-            <svg width="250" height="170" viewBox="0 0 261 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={styles.packageIcon} width="250" height="170" viewBox="0 0 261 213" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <path d="M41.4473 0.991211L24.1889 34.7433H27.6728V62.2669H10.1151L0 82.0485L125.333 146.479L166.781 65.4213L41.4473 0.991211Z" fill="#F2F2F2"/>
 <path d="M229.955 22.9473H37.8032V119.607H229.955V22.9473Z" fill="#3F3D56"/>

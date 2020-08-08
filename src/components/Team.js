@@ -52,13 +52,13 @@ const Team = (props) => {
     return (
         <div className={styles.teamContainer}>
         <div className={styles.founder}>
-          <div className={styles.founderImg}><Img fluid={props.akshat} style={{width:"250px",height:"250px",borderRadius:"50%"}} /></div>
+          <Img className={styles.founderImg} fluid={props.akshat}  />
           <div className={styles.name}>Akshat Kharbanda</div>
           <div className={styles.designation}>CEO & B2B Expert</div>
         </div>
         <div className={styles.team}>
           <div onClick={previous} className={styles.arrow} >{"<"}</div>
-          <div >
+          <div style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
           <Img fluid={member[currentIndex].pic} className={styles.founderImg} />
           <div className={styles.name}>{member[currentIndex].name} </div>
           <div className={styles.designation}>{member[currentIndex].designation} </div>

@@ -60,7 +60,7 @@ const IndexPage = (props) => {
            <IndexHeaderCard title="Accelerate Sales Pipelines" subtitle="Systematically" icon={<QualitativeIcon />} />
            <IndexHeaderCard title="Create Leads that Sales love" subtitle="Qualitatively" icon={<SystematicIcon />} />
           </div>
-          <div style={{right:"4rem",position:"relative"}}><HelpB2BClients  /></div>
+          <div className={styles.B2BContainer} style={{right:"3rem",position:"relative"}}><HelpB2BClients  /></div>
         </div>
       /</BackgroundImage>
 
@@ -157,6 +157,14 @@ export const IndexPageQuery = graphql`
     }
 
     bizampsLogo: file(relativePath: { eq: "bizampsLogo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    indexHeader: file(relativePath: { eq: "indexHeader.svg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

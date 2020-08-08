@@ -59,3 +59,43 @@
 .arrow:hover{
     opacity: 0.3;
 }
+
+@media(max-width:846px)
+{
+    .teamContainer{
+        flex-direction: column;
+    }
+    .arrow{
+        font-size: 4rem;
+    }
+    .founderImg{
+        width:200px;
+        height:200px;
+    }
+    .founder,.team{
+        padding:1.5rem;
+    }
+    .name{
+        font-size: 1.4rem;
+    }  
+}
+
+@media(max-width:565px){
+    .founderImg{
+        width:150px;
+        height:150px;
+    }
+    .arrow{
+        font-size: 3rem;
+    }
+    .founder,.team{
+        padding:1.5rem;
+    }
+    .name{
+        font-size: 1.2rem;
+        line-height: 32px;
+    }  
+    .designation{
+        font-size: 0.8rem;
+    }
+}

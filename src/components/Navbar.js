@@ -5,11 +5,19 @@ import { Link,graphql } from "gatsby"
 import styles from "../stylesheets/navbar.module.scss"
 
 const Navbar = (props) => {
-    {console.log("navbar ",props.logo)}
+    const toggleNav=()=>{
+      const nav=document.getElementById("nav")
+      if (nav.className === styles.nav) {
+        nav.className=styles.toggleNav
+      } else {
+        nav.className = styles.nav;
+      }
+    }
     return (
         <div className={styles.navContainer}>
           <div><Img fluid={props.logo} className={styles.logo}  /> </div>
-          <ul className={styles.nav}>
+          <div className={styles.navToggle} onClick={toggleNav} ><span></span><span></span><span></span></div>
+          <ul className={styles.nav} id="nav">
             <li className={styles.navlist}>Expertise
             <div className={styles.dropdown}>
                 <Link>[Guide] Best of ABM</Link>
@@ -34,6 +42,7 @@ const Navbar = (props) => {
             </div> 
             </li>
           </ul>
+          
         </div>
     )
 }

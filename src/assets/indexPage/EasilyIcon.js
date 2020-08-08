@@ -1,4 +1,6 @@
 import React from 'react'
+import styles from '../../stylesheets/index.module.scss'
+
 
 function EasilyIcon() {
     return (

@@ -45,3 +45,45 @@
 .footerContainer .subtitle{
     margin-bottom: -10px;
 }
+
+@media(max-width:876px){
+    .socio-icon{
+        width:40px;
+        height:40px;
+    }
+    .footerContainer .icons{
+        margin:0px 12px;
+    }
+    .footerContainer .title,.subtitle{
+        width:95%;
+        font-size: 1.2rem;
+        line-height: 35px;
+    }
+}
+
+@media(max-width:565px){
+    .footerContainer{
+        padding:40px 30px;
+    }
+    .socio-icon{
+        width:30px;
+        height:30px;
+    }
+    .footerContainer .icons{
+        margin:0px 8px;
+    }
+    .footerContainer .title,.subtitle{
+        width:100%;
+        font-size: 1rem;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .footerContainer hr{
+        margin:25px 15px auto;
+        width: 80%;
+        border: 0.2px solid #FFFFFF;
+    }
+    .footerContainer .subtitle{
+        margin-bottom: 10px;
+    }
+}
