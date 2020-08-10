@@ -10,6 +10,7 @@ const Testimonial = (props) => {
         <h2>
           Testimonials
         </h2>
+        <div className={styles.scrollContainer}>
         <div className={styles.testimonials}>
           <TestimonialCard pic={props.conor}  name="Conor Rath" 
           body="I got on a call with Akshat not knowing what to expect to get a 3rd opinion on my campaigns I was running (as I do with all my large campaigns).
@@ -25,6 +26,7 @@ const Testimonial = (props) => {
           Would love to work with them again." 
           desig="Crypto Entrepreneur | Advisor: Datalaab & The Kode Network"
            />
+        </div>
         </div>
       </div>
 

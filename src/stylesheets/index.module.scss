@@ -10,15 +10,9 @@
     background-blend-mode: color-burn;
 }
 
-.bgImg{
-    height:100vh;
-    width:100vw;
-    mix-blend-mode: color-burn;
-    margin-top: 0px;
-}
-
 
 .headerContent{
+    margin-top: 1rem;
     width:92%;
     margin:auto;
     display:flex;
@@ -37,7 +31,7 @@
 font-style: normal;
 font-weight: bold;
 font-size: 3rem;
-line-height: 84px;
+line-height: 60px;
 color: #FFFFFF;
 text-align: center;
 margin-top: -4rem;
@@ -78,7 +72,10 @@ font-size: 1.2rem;
 line-height: 35px;
 color: #0052C1;
 }
-
+.B2BContainer{
+    right:2.5rem;
+    position: relative;
+}
 // ---------------------------------
 // PROCESS
 // -------------------------------------
@@ -320,15 +317,39 @@ color: #000000;
 // Testimonial
 // ------------------------------
 
-
+@media(max-width:1400px){
+    .helpB2BImg{
+        width:500px;
+        height:500px;
+    }
+    
+    .B2BContainer{
+        right:0rem;
+    }
+    .headerContent{
+        padding-top: 2rem;
+    }
+    .content{
+        padding-top: 2rem;
+    }
+    .content h1{
+        font-size: 2.5rem;
+    }
+}
 
 @media(max-width:1120px){
+    //--------------------------------
+    //Header
+    //--------------------------------
     .helpB2BImg{
         width:550px;
         height:550px;
     }
     .headerContent{
         flex-direction: column-reverse;
+    }
+    .B2BContainer{
+        right:0;
     }
     //------------------
     //consultation
@@ -447,27 +468,33 @@ color: #000000;
 .processSubtitle{
     font-size: 0.5rem;
 }
-//------------------------
-//testimonials
-//------------------------
-// .testimonials{
-//     width:700px;
-//     height:800px;
-//     overflow-x: scroll;
-//     overflow-y: hidden;
-//     white-space: nowrap;
-  
-//     background-color: chartreuse;
-   
-// }
-// .testimonialCard{
-//     width: 700px;
-//     height:800px;
-//     word-wrap: break-word;
-// }
 }
 
 @media(max-width:585px){
+    //------------------------------------
+    //header
+    //-----------------------------------------
+    .helpB2BImg{
+        width:330px;
+        height:400px;
+    }
+    
+    .B2BContainer{
+        right:0rem;
+    }
+    .headerContent{
+        padding-top: 1rem;
+    }
+    .content{
+        padding: 2rem 1rem;
+    }
+    .content h1{
+        padding:0 0.8rem;
+        font-size: 2.3rem;
+    }
+    .contentCard{
+        flex-direction: column;
+    }
     //--------------------
     //consultation
     //--------------------

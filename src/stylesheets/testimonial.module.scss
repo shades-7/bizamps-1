@@ -36,6 +36,7 @@ color: #001735;
 
 
 .testimonialCard{
+    position: relative;
     padding:3rem 2rem;
     display:flex;
     flex-direction: column;
@@ -53,21 +54,28 @@ border-radius: 12px;
     display:flex;
     flex-direction: row;
     align-items: center;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .top h3{
     padding:0;
-    margin-left: auto;
-    margin-right: 1.5rem;
     color: white;
     font-size: 1.1rem;
+    margin: 0;
+    margin-right: 20px;
     // padding-left: 50%;
 }
 .pic{
-    position: absolute;
+    position: absolute !important;
+    overflow: hidden;
+    top: 0;
+    transform: translateY(40%);
+    left: 10%;
     width:5rem;
     height:5rem;
     border-radius: 50%;
-    margin-top:-4rem;
 }
 .body{
     text-align: justify;
@@ -153,11 +161,44 @@ color: #000000;
 
 @media(max-width:1021px){
     .testimonials{
-       max-width:1021px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-    .testimonialCard{
+        display: flex; /* displays flex-items (children) inline */
         width:100%;
+        justify-content: flex-start;
+        padding: 30px;
+        flex-direction: row;
+        align-items: flex-start;
     }
+    .testimonials .testimonialCard:nth-child(1)
+    {
+        flex: 0 0 600px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+        height: 30rem;
+    }
+    .testimonials .testimonialCard:nth-child(2)
+    {
+        flex: 0 0 500px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+        height: 30rem;
+    }
+    .scrollContainer{
+        display: flex;
+       padding:0;
+       overflow-x: scroll;
+       width:100%;
+    }
+
+    .scrollContainer::-webkit-scrollbar {
+        width: 1em;
+        border-radius: 10px;
+      }
+       
+      .scrollContainer::-webkit-scrollbar-track {
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+       
+      .scrollContainer::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+      }
+    
 }
