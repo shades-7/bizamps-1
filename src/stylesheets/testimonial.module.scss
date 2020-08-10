@@ -153,7 +153,7 @@ color: #000000;
 
 @media(max-width:1021px){
     .testimonials{
-        width:1021px;
+       max-width:1021px;
         overflow-x: scroll;
         overflow-y: hidden;
     }
