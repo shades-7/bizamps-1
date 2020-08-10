@@ -112,27 +112,7 @@ const IndexPage = (props) => {
         <a href="https://www.youtube.com/watch?v=WMUHIPwca4Q&feature=youtu.be&loop=0&autoplay=0" target="_blank"><Img fluid={props.data.video.childImageSharp.fluid} className={styles.video} /></a>
       </div>
 
-      <div className={styles.container7}>
-        <h2>
-          Testimonials
-        </h2>
-        <div className={styles.testimonials}>
-          <Testimonial pic={props.data.conor.childImageSharp.fluid}  name="Conor Rath" 
-          body="I got on a call with Akshat not knowing what to expect to get a 3rd opinion on my campaigns I was running (as I do with all my large campaigns).
-          He quickly was able to add alot of value with some great actionable advice. His breadth of experience in digital marketing really shined through. He is a truly well versed digital strategist.
-          
-          As a fellow digital marketer based in Australia I highly recommend Akshat." 
-          desig="Strategic Marketer"
-           />
-           <Testimonial pic={props.data.gautam.childImageSharp.fluid} name="Gautam Sampathkumr" 
-          body="Great work!
-          Very entrepreneurial and diligent in his approach.
-          Broad knowledge of various pieces of the Digital Ecosystem.
-          Would love to work with them again." 
-          desig="Crypto Entrepreneur | Advisor: Datalaab & The Kode Network"
-           />
-        </div>
-      </div>
+     <Testimonial conor={props.data.conor.childImageSharp.fluid} gautam={props.data.gautam.childImageSharp.fluid} />
 
       <Team akshat={props.data.akshat.childImageSharp.fluid} 
       mehvish={props.data.mehvish.childImageSharp.fluid} 

@@ -5,18 +5,18 @@ import { Link,graphql } from "gatsby"
 import styles from "../stylesheets/navbar.module.scss"
 
 const Navbar = (props) => {
-    // const toggleNav=()=>{
-    //   const nav=document.getElementById("nav")
-    //   if (nav.className === styles.nav) {
-    //     nav.className=styles.toggleNav
-    //   } else {
-    //     nav.className = styles.nav;
-    //   }
-    // }
+    const toggleNav=()=>{
+      const nav=document.getElementById("nav")
+      if (nav.className === styles.nav) {
+        nav.className=styles.toggleNav
+      } else {
+        nav.className = styles.nav;
+      }
+    }
     return (
         <div className={styles.navContainer}>
           <div><Img fluid={props.logo} className={styles.logo}  /> </div>
-          <div className={styles.navToggle}  ><span></span><span></span><span></span></div>
+          <div className={styles.navToggle} onClick={toggleNav}  ><span></span><span></span><span></span></div>
           
           <ul className={styles.nav} id="nav">
             <li className={styles.navlist}>
