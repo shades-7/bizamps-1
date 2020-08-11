@@ -230,8 +230,16 @@ color: #000000;
     .container7{
         padding:1.5rem 1rem;
     }
+    .top{
+        padding:1rem;
+    }
+    .top h3{
+        font-size: 0.9rem;
+        margin-right: 2px;
+    }
     .testimonials .testimonialCard:nth-child(1) .body{
-        font-size: 1rem;
+        font-size: 0.9rem;
+        line-height: 25px;
         margin-left:-2rem;
         margin-right: -2rem;
     }
@@ -243,12 +251,13 @@ color: #000000;
     }
     .testimonials .testimonialCard:nth-child(1)
     {
-        flex: 0 0 400px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+        flex: 0 0 350px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
         height: 30rem;
+        
     }
     .testimonials .testimonialCard:nth-child(2)
     {
-        flex: 0 0 400px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+        flex: 0 0 370px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
         height: 30rem;
     }
 }
