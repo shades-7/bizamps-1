@@ -100,8 +100,14 @@ color: #0052C1;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin:0rem 1.5rem;
 }
 
+.scrollContainer{
+    display: flex;
+    flex-direction: row;
+
+}
 
 .processTitle{
     font-family: Roboto;
@@ -335,6 +341,13 @@ color: #000000;
     .content h1{
         font-size: 2.5rem;
     }
+    .processCard{
+        margin:0 1rem;
+    }
+    .processTitle{
+        font-size: 2.5rem;
+        line-height: 60px;
+    }
 }
 
 @media(max-width:1120px){
@@ -342,7 +355,7 @@ color: #000000;
     //Header
     //--------------------------------
     .helpB2BImg{
-        width:550px;
+        width:650px;
         height:550px;
     }
     .headerContent{
@@ -387,6 +400,38 @@ color: #000000;
     .container6 a{
         width:80%;
     }
+    //-----------------------
+    //process
+    //-------------------------
+    .scrollContainer{
+        display: flex;
+       overflow-x: scroll;
+        width:100%;
+        justify-content: flex-start;
+        padding: 30px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .scrollContainer::-webkit-scrollbar {
+        width: 1em;
+        border-radius: 10px;
+      }
+       
+      .scrollContainer::-webkit-scrollbar-track {
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+       
+      .scrollContainer::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+      }
+      .processCard{
+        flex: 0 0 400px; 
+        height: 20rem;
+      }
 }
 
 @media(max-width:846px){
@@ -463,10 +508,14 @@ color: #000000;
 //process
 //-------------------------
 .processTitle{
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .processSubtitle{
-    font-size: 0.5rem;
+    font-size: 1rem;
+}
+  .processCard{
+    flex: 0 0 350px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+    height: 20rem;
 }
 }
 
@@ -494,6 +543,27 @@ color: #000000;
     }
     .contentCard{
         flex-direction: column;
+    }
+    //-----------------------
+    //process
+    //--------------------------
+    .container2{
+        padding:2rem 1rem;
+    }
+    .scrollContainer{
+    padding: 30px 0px;
+    }
+    .processTitle{
+        font-size: 1.7rem;
+        line-height: 40px;
+    }
+    .processSubtitle{
+        font-size: 1rem;
+    }
+      .processCard{
+        flex: 0 0 250px; 
+        height: 17rem;
+        margin:1rem 0.5rem;
     }
     //--------------------
     //consultation

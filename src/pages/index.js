@@ -65,9 +65,11 @@ const IndexPage = (props) => {
       /</BackgroundImage>
 
       <div className={styles.container2}>
+        <div className={styles.scrollContainer}>
         <IndexProcessCard title="THE DEMAND GENERATION PROCESS" subtitle="" content={process1} />
         <IndexProcessCard title="ACCOUNT BASED MARKETING PROCESS" subtitle="For Dream Accounts" content={process2} />
         <IndexProcessCard title="SALES ♡ MARKETING LEADS" subtitle="SQLs not MQLs" content={process3} />
+        </div>
       </div>
 
       <div className={styles.container3}>

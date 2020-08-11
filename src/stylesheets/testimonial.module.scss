@@ -200,5 +200,55 @@ color: #000000;
         background-color: darkgrey;
         outline: 1px solid slategrey;
       }
-    
+}
+
+@media(max-width:880px){
+    .container7{
+        padding:2rem 2rem;
+    }
+    .testimonials{
+        display: flex; /* displays flex-items (children) inline */
+        width:100%;
+        justify-content: flex-start;
+        padding: 10px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .testimonials .testimonialCard:nth-child(1)
+    {
+        flex: 0 0 450px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+        height: 35rem;
+    }
+    .testimonials .testimonialCard:nth-child(2)
+    {
+        flex: 0 0 450px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+        height: 35rem;
+    }
+}
+
+@media(max-width:644px){
+    .container7{
+        padding:1.5rem 1rem;
+    }
+    .testimonials .testimonialCard:nth-child(1) .body{
+        font-size: 1rem;
+        margin-left:-2rem;
+        margin-right: -2rem;
+    }
+    .testimonials .testimonialCard:nth-child(2) .body{
+        font-size: 1rem;
+    }
+    .desig{
+        font-size: 1.1rem;
+    }
+    .testimonials .testimonialCard:nth-child(1)
+    {
+        flex: 0 0 400px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+        height: 30rem;
+    }
+    .testimonials .testimonialCard:nth-child(2)
+    {
+        flex: 0 0 400px; /* doesn't grow nor shrink, initial width set to 25% of the parent's */
+        height: 30rem;
+    }
 }
