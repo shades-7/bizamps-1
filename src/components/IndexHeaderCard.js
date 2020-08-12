@@ -6,7 +6,7 @@ const IndexHeaderCard=(props)=> {
     return (
        <>
             <div className={styles.innerContent}>
-                <div>{props.icon}</div>
+                <div style={{zIndex:"3"}}>{props.icon}</div>
                 <div className={styles.contentCard}>
                     <span className={styles.contentTitle}>{props.title} </span>
                     <span className={styles.contentSubtitle}> {props.subtitle}</span>

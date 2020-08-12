@@ -4,7 +4,7 @@ import styles from '../../stylesheets/index.module.scss'
 function SystematicIcon() {
     return (
        <>
-        <svg width="122" height="122" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.headerIcon} width="122" height="122" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
 <circle cx="74" cy="74" r="56" fill="#001735"/>
 </g>

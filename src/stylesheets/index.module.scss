@@ -535,7 +535,7 @@ color: #000000;
         padding-top: 1rem;
     }
     .content{
-        padding: 2rem 1rem;
+        padding: 0rem 0rem;
     }
     .content h1{
         padding:0 0.8rem;
@@ -543,6 +543,29 @@ color: #000000;
     }
     .contentCard{
         flex-direction: column;
+    }
+    .headerIcon{
+        width:80px;
+        height:80px;
+        z-index:5;
+    }
+    .contentCard{
+        border-radius: 30px;
+        width:80%;
+        margin-bottom: 1rem;
+        padding:0.5rem 1rem;
+        margin-left: -2.5rem;
+        z-index:1;
+    }
+    .contentTitle{
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: center;
+        margin-right: 0;
+    }
+    .contentSubtitle{
+        font-size: 0.9rem;
     }
     //-----------------------
     //process
