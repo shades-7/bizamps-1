@@ -1,0 +1,277 @@
+.container{
+    background: linear-gradient(90deg, #2F80ED 42.71%, rgba(47, 128, 237, 0) 84.37%);
+    width:100%;
+    margin-top: 0px;
+    background-blend-mode: normal;
+    height:100vh;
+}
+
+.background{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.backgroundImg{
+    flex:1;
+    height:100%;
+}
+//-----------------------------
+//we Are
+//-----------------------------
+.weAreContainer{
+    position: relative;
+}
+.weAreContent{
+    position: absolute;
+    top:25%;
+}
+.weAreCards{
+    width:90%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    // background-color: yellow;
+}
+.weAreCard{
+    width:25rem;
+    flex:1;
+    margin-right: 3rem;
+    background: #2F80ED;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.weAreIcon{
+    position: absolute;
+    top:-55%;
+}
+.weAreTitle{
+    
+}
+//----------------------------------
+//card
+//---------------------------------------
+.cardsContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+}
+.cardContainer{
+    box-shadow: -4px 0px 10px 3px rgba(0, 0, 0, 0.1), -2px 0px 6px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+.cardsContainer .cardContainer:nth-of-type(odd)
+{
+    width:95%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    margin-top: 1.5rem;
+}
+.cardsContainer .cardContainer:nth-of-type(even)
+{
+    width:95%;
+    margin:auto;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: stretch; 
+    margin-top: 1.5rem;
+}
+.cardsContainer .cardContainer:nth-of-type(odd) .contentCard{
+    background: #303030;
+    box-shadow: 4px 0px 10px 3px rgba(0, 0, 0, 0.1), 2px 0px 6px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 40px 40px 0px;
+    color:white;
+    padding:1.5rem 2rem;
+    flex:1;
+}
+.cardsContainer .cardContainer:nth-of-type(even) .contentCard{
+    background: #2F80ED;
+    box-shadow: -4px 0px 10px 3px rgba(0, 0, 0, 0.1), -2px 0px 6px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0px 0px 40px;
+    padding:1.5rem 2rem;
+    flex:1;
+}
+.cardHeading{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size:2.1rem ;
+    line-height: 2.3rem;
+    color: #FFFFFF;
+    padding-bottom: 1.3rem;
+}
+.divContainer{
+    padding:0.3rem 0rem;
+}
+.cardSubheading{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size:1.2rem ;
+    line-height: 2rem;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.cardText{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size:1rem ;
+    line-height: 1.8rem;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+//-----------------------
+//location
+//---------------------------
+.location{
+    font-family: Roboto;
+    font-style: normal;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.end{
+    color:#2F80ED;
+}
+//------------------------------
+//Paid consult
+//------------------------------
+.paidConsultContainer{
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    justify-content: flex-start;
+    padding:2rem 2rem;
+    background: #FAFAFA;
+}
+.paidConsultContent{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // justify-content: center;
+    // background-color: blue;
+    padding:2rem 4rem;
+}
+.paidConsultHeading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    padding:1rem;
+    margin-right: -3rem;
+}
+.paidConsultHeading span{
+    flex:1;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2rem;
+    line-height: 66px;
+    color: #000000;
+    // background-color: yellow;
+    margin-right:1rem;
+}
+.paidConsultSub1,.paidConsultSub2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.paidConsultSub1 span:nth-child(1),.paidConsultSub2 span:nth-child(1){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 42px;
+    color: #000000;
+    opacity: 0.8;
+    padding-right:0.5rem;
+    padding-bottom: 0.5rem;
+}
+.paidConsultSub1 span:nth-child(2),.paidConsultSub2 span:nth-child(2){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.35rem;
+    line-height: 42px;
+    color: #000000;
+    opacity: 0.7;
+    padding-bottom: 0.5rem;
+
+}
+.akshat{
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+}
+.paidConsultButton{
+    margin-top: 2rem;
+    background: #2F80ED;
+    border: none;
+    border-radius: 10px;
+    padding:0.9rem 3rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+//-----------------------------
+//freeConsult
+//-----------------------------
+.freeConsultContainer{
+    width:100%;
+    position: relative;
+}
+.freeConsult{
+    position: absolute;
+    top:25%;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.freeConsultContent{
+ 
+ text-align: center;
+}
+.freeConsultContent div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+    line-height: 66px;
+    color: #FFFFFF;
+    padding:1.8rem;
+}
+
+.freeConsultContent button{
+    background: #2F80ED;
+    border: none;
+    border-radius: 10px;
+    padding:1rem 3rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-align: center;
+}
