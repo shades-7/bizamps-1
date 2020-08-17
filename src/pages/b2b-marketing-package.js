@@ -27,25 +27,22 @@ const B2BMarketingPackagePage = (props) => {
         <Layout>
           <BackgroundImage fluid={props.data.bg2.childImageSharp.fluid} className={styles.container} >
                <Navbar logo={props.data.bizampsLogo.childImageSharp.fluid} />
-                <div className={styles.background}>
                     <div className={styles.headerContent}>
-                        <h1 className={styles.title}>Transform your Marketing & LeadGen</h1>
-                        <div className={styles.subtitle}>Marketing so good that you will ask us to PAUSE!</div>
-                        <button className={styles.button}>Find How</button>
+                        <h1 className={styles.headerTitle}>Transform your Marketing & LeadGen</h1>
+                        <div className={styles.headerSubtitle}>Marketing so good that you will ask us to PAUSE!</div>
+                        <button className={styles.headerButton}>Find How</button>
                     </div>
-                    {/* <Img fluid={props.data.bg2.childImageSharp.fluid} className={styles.backgroundImg} /> */}
-                </div>
           </BackgroundImage >
 
           <div className={styles.weAreContainer}>
             <WeAreBg />
             <div className={styles.weAreContent}>
-              <div>We Are</div>
+              <div className={styles.weAreHeading}>We Are</div>
               <div className={styles.weAreCards}>
               <WeAreCard icon={LeadIcon} title="Lead Generation Experts" subtitle="No generalists here" />
               <WeAreCard icon={RevenueIcon} title="Revenue Focused" subtitle="Growing your top-line" caption="Setting systems for life" />
               </div>
-              <div>We setup B2B marketing outbound marketing systems that generate sales leads within 90 days or we work for free</div>
+              <div className={styles.weAreSubHeading}>We setup B2B marketing outbound marketing systems that generate sales leads within 90 days or we work for free</div>
           </div>
           </div>
 
@@ -149,7 +146,7 @@ export default B2BMarketingPackagePage
 
 export const B2BMarketingPackagePageQuery = graphql`
   query {
-    bg2: file(relativePath: { eq: "bg2.jpg" }) {
+    bg2: file(relativePath: { eq: "bgMarketingPackage.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

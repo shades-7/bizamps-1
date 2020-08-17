@@ -1,17 +1,49 @@
 .container{
-    background: linear-gradient(90deg, #2F80ED 42.71%, rgba(47, 128, 237, 0) 84.37%);
+    //background: linear-gradient(90deg, #2F80ED 42.71%, rgba(47, 128, 237, 0) 84.37%);
     width:100%;
     margin-top: 0px;
-    background-blend-mode: normal;
     height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.background{
-    width:100%;
+.headerContent{
+    width:50%;
+    padding:8rem 4rem;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-
+.headerTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+}
+.headerSubtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+.headerButton{
+    margin-top: 2rem;
+    padding:0.5rem 2.8rem;
+    background: #001735;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
 .backgroundImg{
     flex:1;
     height:100%;
@@ -24,7 +56,30 @@
 }
 .weAreContent{
     position: absolute;
-    top:25%;
+    top:20%;
+}
+.weAreHeading{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 2.8rem;
+line-height: 3rem;
+text-align: center;
+color: #232323;
+margin-bottom: 2rem;
+}
+.weAreSubHeading{
+    width:60%;
+    margin:auto;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 1.7rem;
+line-height: 2.2rem;
+text-align: center;
+color: #232323;
+margin-top: 2.5rem;
+margin-bottom: 2rem;
 }
 .weAreCards{
     width:90%;
@@ -32,13 +87,13 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
     // background-color: yellow;
 }
 .weAreCard{
     width:25rem;
-    flex:1;
-    margin-right: 3rem;
+    //flex:1;
+    //margin-right: 2rem;
     background: #2F80ED;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -49,11 +104,41 @@
     position: relative;
 }
 .weAreIcon{
-    position: absolute;
-    top:-55%;
+ position: absolute;
+    top:-35%;
+    //margin-bottom: 10%;
 }
 .weAreTitle{
-    
+    margin-top: 10%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.weAreCard hr{
+    margin-top: 0.7rem;
+    width:50%;
+    height:0.5px;
+    background-color: #c9c9c9;
+}
+.weAreSubtitle{
+    margin-top: -1rem;
+}
+.weAreCaption{
+    margin-bottom: 1.5rem;
+}
+.weAreSubtitle,.weAreCaption{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center; 
+    color: #FFFFFF;
+    opacity: 0.8;   
 }
 //----------------------------------
 //card
