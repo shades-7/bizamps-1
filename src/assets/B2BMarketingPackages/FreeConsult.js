@@ -1,9 +1,11 @@
 import React from 'react'
 
+import styles from "../../stylesheets/b2bMarketingPackage.module.scss"
+
 const FreeConsult = () => {
     return (
         <>
-           <svg width="100%" height="auto" viewBox="0 0 1920 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <svg width="100%" height="auto" className={styles.freeConsultBg} viewBox="0 0 1920 720" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="1920" height="720" fill="#2D2D2D"/>
 <path d="M341.277 522.258C219.845 466.401 63.1623 464.329 0 470.274V720H1920V499.323C1848.13 560.481 1725.18 586.473 1630.49 586.473C1516.74 586.473 1458.6 554.365 1286.7 542.643C1114.81 530.921 980.105 595.137 813.738 624.187C647.372 653.236 493.068 592.08 341.277 522.258Z" fill="#232323"/>
 <path d="M0 470.274C63.1623 464.329 219.845 466.401 341.277 522.258C493.068 592.08 647.372 653.236 813.738 624.187C980.105 595.137 1114.81 530.921 1286.7 542.643C1458.6 554.365 1516.74 586.473 1630.49 586.473C1725.18 586.473 1848.13 560.481 1920 499.323" stroke="#2F80ED" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>

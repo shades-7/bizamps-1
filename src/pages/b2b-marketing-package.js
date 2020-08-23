@@ -18,7 +18,12 @@ import Card3Img from "../assets/B2BMarketingPackages/Card3Img"
 import Card4Img from "../assets/B2BMarketingPackages/Card4Img"
 import WeAreBg from "../assets/B2BMarketingPackages/WeAreBg"
 import LeadIcon from "../assets/B2BMarketingPackages/LeadIcon"
+import LeadIconMob from "../assets/B2BMarketingPackages/LeadIconMob"
 import RevenueIcon from "../assets/B2BMarketingPackages/RevenueIcon"
+import RevenueIconMob from "../assets/B2BMarketingPackages/RevenueIconMob"
+import NamedAccountWorkflow from "../assets/B2BMarketingPackages/NamedAccountWorkflow"
+import LeadsPredictWorkflow from "../assets/B2BMarketingPackages/LeadsPredictWorkflow"
+import PaidConsultMob from "../assets/B2BMarketingPackages/PaidConsultMob"
 
 import styles from "../stylesheets/b2bMarketingPackage.module.scss"
 
@@ -35,12 +40,12 @@ const B2BMarketingPackagePage = (props) => {
           </BackgroundImage >
 
           <div className={styles.weAreContainer}>
-            <WeAreBg />
+            <div className={styles.weAreBg}><WeAreBg /></div>
             <div className={styles.weAreContent}>
               <div className={styles.weAreHeading}>We Are</div>
               <div className={styles.weAreCards}>
-              <WeAreCard icon={LeadIcon} title="Lead Generation Experts" subtitle="No generalists here" />
-              <WeAreCard icon={RevenueIcon} title="Revenue Focused" subtitle="Growing your top-line" caption="Setting systems for life" />
+              <WeAreCard icon={LeadIcon} iconMob={LeadIconMob} title="Lead Generation Experts" subtitle="No generalists here" />
+              <WeAreCard icon={RevenueIcon} iconMob={RevenueIconMob} title="Revenue Focused" subtitle="Growing your top-line" caption="Setting systems for life" />
               </div>
               <div className={styles.weAreSubHeading}>We setup B2B marketing outbound marketing systems that generate sales leads within 90 days or we work for free</div>
           </div>
@@ -58,6 +63,7 @@ const B2BMarketingPackagePage = (props) => {
             monthlyPrice="From $1499 to $2499 based on goals." 
             whyBiz="Sufficient knowledge for each channel and personalization to execute the campaign right." 
             channels="Usually LinkedIn & Display Ads + BoFu Content + Outreach + Direct mail + Misc."  
+            workflow={NamedAccountWorkflow}
             />
              <B2BMarketingCard 
              img={Card2Img }
@@ -70,6 +76,7 @@ const B2BMarketingPackagePage = (props) => {
             monthlyPrice="From $999 to $2499 based on market difficulty." 
             whyBiz="Ran such Proof-of-concept campaign 10+ times." 
             channels="Email Outreach, LinkedIn Outreach, Tele-sales."  
+            workflow=""
             />
              <B2BMarketingCard 
              img={Card3Img }
@@ -82,6 +89,7 @@ const B2BMarketingPackagePage = (props) => {
             monthlyPrice="Contact Akshat." 
             whyBiz="This is an experimental system that needs tweaks and focus. We understand it." 
             channels="Intent Signals + AI Personalization + Chatbots + Marketing Automation."  
+            workflow=""
             />
              <B2BMarketingCard 
              img={Card4Img }
@@ -94,12 +102,14 @@ const B2BMarketingPackagePage = (props) => {
             monthlyPrice="From $999+ based on goals." 
             whyBiz="Done this ever since we re-branded in 2017." 
             channels="Email Outreach or LinkedIn Outreach or Tele-sales."  
+            workflow={LeadsPredictWorkflow}
             />
             
           </div>
 
           <div className={styles.paidConsultContainer}>
-            <div>< PaidConsult /></div>
+            <div className={styles.paidConsultImg}>< PaidConsult /></div>
+            <div className={styles.paidConsultMobImg}><PaidConsultMob /></div>
             <div className={styles.paidConsultContent}>
               <div className={styles.paidConsultHeading}>
                 <span>Paid Consultation with Akshat</span>

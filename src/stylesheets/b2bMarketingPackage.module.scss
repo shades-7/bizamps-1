@@ -43,6 +43,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     color: #FFFFFF;
+    border:none;
 }
 .backgroundImg{
     flex:1;
@@ -56,13 +57,13 @@
 }
 .weAreContent{
     position: absolute;
-    top:20%;
+    top:15%;
 }
 .weAreHeading{
     font-family: Roboto;
 font-style: normal;
 font-weight: 500;
-font-size: 2.8rem;
+font-size: 3rem;
 line-height: 3rem;
 text-align: center;
 color: #232323;
@@ -78,7 +79,7 @@ font-size: 1.7rem;
 line-height: 2.2rem;
 text-align: center;
 color: #232323;
-margin-top: 2.5rem;
+margin-top: 2.8rem;
 margin-bottom: 2rem;
 }
 .weAreCards{
@@ -107,6 +108,9 @@ margin-bottom: 2rem;
  position: absolute;
     top:-35%;
     //margin-bottom: 10%;
+}
+.weAreIconMob{
+    display:none;
 }
 .weAreTitle{
     margin-top: 10%;
@@ -154,6 +158,49 @@ margin-bottom: 2rem;
 .cardContainer{
     box-shadow: -4px 0px 10px 3px rgba(0, 0, 0, 0.1), -2px 0px 6px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
+}
+.cardImgContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seeWorkflow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #2F80ED;
+}
+.seeWorkflow span{
+    margin-right:0.3rem;
+}
+.seeWorkflow:hover{
+    cursor: pointer;
+}
+.workflow{
+    z-index:5;
+    //background-color: red;
+    width:100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position :relative;
+    background-color: white;
+}
+.closeButton{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.closeButton:hover{
+    cursor: pointer;
 }
 .cardsContainer .cardContainer:nth-of-type(odd)
 {
@@ -244,6 +291,9 @@ margin-bottom: 2rem;
     justify-content: flex-start;
     padding:2rem 2rem;
     background: #FAFAFA;
+}
+.paidConsultMobImg{
+    display:none;
 }
 .paidConsultContent{
     flex:1;
@@ -359,4 +409,131 @@ margin-bottom: 2rem;
     font-size: 1.5rem;
     color: #FFFFFF;
     text-align: center;
+}
+@media(max-width:1430px){
+    //----------------------------
+    //Paid Consult
+    //-----------------------------
+    .paidConsultImg{
+        display:none;
+    }
+    .paidConsultMobImg{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:1260px){
+    //--------------------------
+    //We Are
+    //---------------------------
+    .weAreContainer{
+        background-color: black;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:2rem;
+    }
+    .weAreBg{
+        display:none;
+    }
+    .weAreCards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .weAreCard:nth-child(1){
+        margin-top:1.5rem;
+    }
+    .weAreCard:nth-child(2){
+        margin-top:4rem;
+    }
+    .weAreCard{
+        background: radial-gradient(100.73% 225.04% at 0% 100%, #2F80ED 2.6%, rgba(47, 128, 237, 0) 12.5%), radial-gradient(69.98% 156.34% at 0% 100%, #2F80ED 23.44%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1), 3px 3px 6px rgba(0, 0, 0, 0.15), 1px 1px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width:80%;
+    }
+    .weAreContent{
+        position: relative;
+    }
+    .weAreIconMob{
+        position: absolute;
+        display:block;
+           top:-18%;
+           //margin-bottom: 10%;
+       }
+       .weAreIcon{
+           display:none;
+       }
+    .weAreHeading{
+        color:white;
+         padding:1rem;
+    }
+    .weAreSubHeading{
+        width:70%;
+        color:white;
+    }
+    .weAreTitle{
+        color:black;
+        font-weight: 500;
+        font-size:2rem;
+    }
+    .weAreSubtitle,.weAreCaption{
+        color:black;
+        opacity:0.8;
+        font-size:1.3rem;
+        line-height:1.8rem;
+    }
+}
+
+@media(max-width:1100px){
+    //---------------------
+    //Cards
+    //-----------------------------
+   .cardsContainer .cardContainer:nth-of-type(even){
+       flex-direction: column;
+   }
+   .cardsContainer .cardContainer:nth-of-type(odd){
+    flex-direction: column;
+    }
+.cardsContainer .cardContainer:nth-of-type(even) .contentCard{
+    background-color:  #303030;
+}
+//--------------------------------------------
+//FreeConsult
+//-----------------------------------------
+.freeConsult{
+    top:18%;
+}
+.freeConsultContent div{
+    font-size:2.3rem;
+}
+.freeConsultContent button{
+    font-size: 1.3rem;
+    padding:0.8rem 2.7rem;
+}
+}
+@media(max-width:940px){
+    //--------------------------------------------
+//FreeConsult
+//-----------------------------------------
+// .freeConsultContainer{
+//     min-height: 500px;
+// }
+.freeConsult{
+    top:12%;
+}
+.freeConsultContent div{
+    font-size:2rem;
+    padding:1.2rem;
+}
+.freeConsultContent button{
+    font-size: 1.1rem;
+    padding:0.8rem 2.7rem;
+}
+.freeConsultBg{
+    height:100%;
+}
 }

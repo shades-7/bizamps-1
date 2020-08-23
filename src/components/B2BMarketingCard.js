@@ -1,14 +1,32 @@
 import React from 'react'
 
-// import styles from "../stylesheets/b2bMarketingCard.module.scss"
+import CloseButton from "../assets/B2BMarketingPackages/CloseButton"
+import PlusButton from "../assets/B2BMarketingPackages/PlusButton"
+
 import styles from "../stylesheets/b2bMarketingPackage.module.scss"
 
 
 const B2BMarketingCard = (props) => {
+
+    const displayWorkflow=()=>{
+        let workflow=document.getElementById("workflow")
+        workflow.style.display="block";
+    }
+    const hideWorkflow=()=>{
+        let workflow=document.getElementById("workflow")
+        workflow.style.display="none";
+    }
     return (
         <>
             <div className={styles.cardContainer}>
-                <div><props.img /> </div>
+                <div className={styles.cardImgContainer}>
+                    <props.img /> 
+                    {
+                        props.workflow!==""?
+                        <div className={styles.seeWorkflow} onClick={displayWorkflow}><span>See Workflow </span><PlusButton /></div>
+                        : ""
+                    }
+                </div>
                 <div className={styles.contentCard}>
                    <div className={styles.cardHeading} >
                        <div>{props.heading} </div>
@@ -43,7 +61,14 @@ const B2BMarketingCard = (props) => {
                        <span className={styles.cardText}>{props.channels} </span>
                    </div>
                 </div>
+               
             </div>
+            {
+                    props.workflow!==""?<span className={styles.workflow} id="workflow">
+                    <div><props.workflow /></div>
+                    <div className={styles.closeButton} onClick={hideWorkflow}><CloseButton /></div>
+                </span>:""
+                }
         </>
     )
 }
