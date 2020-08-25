@@ -28,6 +28,54 @@ import PaidConsultMob from "../assets/B2BMarketingPackages/PaidConsultMob"
 import styles from "../stylesheets/b2bMarketingPackage.module.scss"
 
 const B2BMarketingPackagePage = (props) => {
+  const cards=[{img:Card1Img ,
+    key:"one",
+    heading:"We want to get into big must-have named accounts",
+    who:"Companies selling $100,000+ deals and the key focus is account engagement",
+    concept1:"1) Whole marketing campaign targeted towards a single account or a cluster of 5 similar accounts.",
+    concept2:"2) Research + personalization drive results from even non-performing channels." ,
+    whyWorks:"When we narrow our focus to the point of a laser then better & creative ideas come." ,
+    timeline:"3 months for Proof of concept and 3 months after that for scaling number of accounts.", 
+    monthlyPrice:"From $1499 to $2499 based on goals." ,
+    whyBiz:"Sufficient knowledge for each channel and personalization to execute the campaign right." ,
+    channels:"Usually LinkedIn & Display Ads + BoFu Content + Outreach + Direct mail + Misc.",  
+    workflow:NamedAccountWorkflow},
+  { img:Card2Img ,
+    key:"two",
+  heading:"We want 200 qualified B2B Leads/month",
+  who:"Companies who already have a sales team who want to assure results fast.",
+  concept1:"1) Prove a model where one low-cost human resource generates 5-20 leads/month easily.",
+  concept2:"2) Scaling that lead generation team." ,
+  whyWorks:"80% of the workflow is templatized & automated. Human Resources just have to do personalizations for higher response rates.+ India has English speaking low-cost human resources." ,
+  timeline:"3 months for Proof of concept and 3 months after that for scaling the team by hiring and training." ,
+  monthlyPrice:"From $999 to $2499 based on market difficulty." ,
+  whyBiz:"Ran such Proof-of-concept campaign 10+ times." ,
+  channels:"Email Outreach, LinkedIn Outreach, Tele-sales." , 
+  workflow:""},
+  {img:Card3Img ,
+    key:"three",
+  heading:"We want instant scalablity & automated marketing",
+  who:"You are competing with Silicon valley Self-serve B2B SaaS companies targeting micro as well as large businesses.",
+  concept1:"1) Identify accounts automatically based on buying signals. ",
+  concept2:"2) Personalize website, outreach, ads on autopilot." ,
+  whyWorks:"When we narrow our focus to the point of a laser then better & creative ideas come." ,
+  timeline:"6 months for Proof of concept and 3 months after that for scaling." ,
+  monthlyPrice:"Contact Akshat." ,
+  whyBiz:"This is an experimental system that needs tweaks and focus. We understand it." ,
+  channels:"Intent Signals + AI Personalization + Chatbots + Marketing Automation." , 
+  workflow:""},
+  {img:Card4Img ,
+    key:"four",
+  heading:"We just need some leads predicatably in our inbox",
+  who:"Startups and bootstrapping companies.",
+  concept1:"1) Automated emails and LinkedIn messages with new-age copywriting and BizAmps Secrets.",
+  concept2:"2) Generate leads from affordable sources like FB Lead Ads (If applicable).", 
+  whyWorks:"Usually, 3% of any market is always looking to buy." ,
+  timeline:"45 days to start generating leads or we work for free." ,
+  monthlyPrice:"From $999+ based on goals." ,
+  whyBiz:"Done this ever since we re-branded in 2017." ,
+  channels:"Email Outreach or LinkedIn Outreach or Tele-sales." , 
+  workflow:LeadsPredictWorkflow}]
     return (
         <Layout>
           <BackgroundImage fluid={props.data.bg2.childImageSharp.fluid} className={styles.container} >
@@ -52,64 +100,19 @@ const B2BMarketingPackagePage = (props) => {
           </div>
 
           <div className={styles.cardsContainer}>
-            <B2BMarketingCard 
-            img={Card1Img }
-            heading="We want to get into big must-have named accounts"
-            who="Companies selling $100,000+ deals and the key focus is account engagement"
-            concept1="1) Whole marketing campaign targeted towards a single account or a cluster of 5 similar accounts."
-            concept2="2) Research + personalization drive results from even non-performing channels." 
-            whyWorks="When we narrow our focus to the point of a laser then better & creative ideas come." 
-            timeline="3 months for Proof of concept and 3 months after that for scaling number of accounts." 
-            monthlyPrice="From $1499 to $2499 based on goals." 
-            whyBiz="Sufficient knowledge for each channel and personalization to execute the campaign right." 
-            channels="Usually LinkedIn & Display Ads + BoFu Content + Outreach + Direct mail + Misc."  
-            workflow={NamedAccountWorkflow}
-            />
-             <B2BMarketingCard 
-             img={Card2Img }
-            heading="We want 200 qualified B2B Leads/month"
-            who="Companies who already have a sales team who want to assure results fast."
-            concept1="1) Prove a model where one low-cost human resource generates 5-20 leads/month easily."
-            concept2="2) Scaling that lead generation team." 
-            whyWorks="80% of the workflow is templatized & automated. Human Resources just have to do personalizations for higher response rates.+ India has English speaking low-cost human resources." 
-            timeline="3 months for Proof of concept and 3 months after that for scaling the team by hiring and training." 
-            monthlyPrice="From $999 to $2499 based on market difficulty." 
-            whyBiz="Ran such Proof-of-concept campaign 10+ times." 
-            channels="Email Outreach, LinkedIn Outreach, Tele-sales."  
-            workflow=""
-            />
-             <B2BMarketingCard 
-             img={Card3Img }
-            heading="We want instant scalablity & automated marketing"
-            who="You are competing with Silicon valley Self-serve B2B SaaS companies targeting micro as well as large businesses."
-            concept1="1) Identify accounts automatically based on buying signals. "
-            concept2="2) Personalize website, outreach, ads on autopilot." 
-            whyWorks="When we narrow our focus to the point of a laser then better & creative ideas come." 
-            timeline="6 months for Proof of concept and 3 months after that for scaling." 
-            monthlyPrice="Contact Akshat." 
-            whyBiz="This is an experimental system that needs tweaks and focus. We understand it." 
-            channels="Intent Signals + AI Personalization + Chatbots + Marketing Automation."  
-            workflow=""
-            />
-             <B2BMarketingCard 
-             img={Card4Img }
-            heading="We just need some leads predicatably in our inbox"
-            who="Startups and bootstrapping companies."
-            concept1="1) Automated emails and LinkedIn messages with new-age copywriting and BizAmps Secrets."
-            concept2="2) Generate leads from affordable sources like FB Lead Ads (If applicable)." 
-            whyWorks="Usually, 3% of any market is always looking to buy." 
-            timeline="45 days to start generating leads or we work for free." 
-            monthlyPrice="From $999+ based on goals." 
-            whyBiz="Done this ever since we re-branded in 2017." 
-            channels="Email Outreach or LinkedIn Outreach or Tele-sales."  
-            workflow={LeadsPredictWorkflow}
-            />
+            {
+              cards.map((card)=>{
+                return (<B2BMarketingCard key={card.key} img={card.img} heading={card.heading} who={card.who} concept1={card.concept1} concept2={card.concept2}
+                  whyWorks={card.whyWorks} timeline={card.timeline} monthlyPrice={card.monthlyPrice} whyBiz={card.whyBiz} channels={card.channels}
+                  workflow={card.workflow} />)
+              })
+            }
             
           </div>
 
           <div className={styles.paidConsultContainer}>
-            <div className={styles.paidConsultImg}>< PaidConsult /></div>
-            <div className={styles.paidConsultMobImg}><PaidConsultMob /></div>
+            <div className={styles.paidConsultImgDiv}>< PaidConsult /></div>
+            <div className={styles.paidConsultMobImgDiv}><PaidConsultMob /></div>
             <div className={styles.paidConsultContent}>
               <div className={styles.paidConsultHeading}>
                 <span>Paid Consultation with Akshat</span>
@@ -145,6 +148,7 @@ const B2BMarketingPackagePage = (props) => {
         anvishka={props.data.anvishka.childImageSharp.fluid} 
         shweta={props.data.shweta.childImageSharp.fluid}
         />
+
         <div className={styles.location}>
           Home {">>"} Pricing {">>"} <span className={styles.end}>B2B Marketing Packages</span>
         </div>

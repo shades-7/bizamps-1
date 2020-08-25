@@ -9,11 +9,11 @@ import styles from "../stylesheets/b2bMarketingPackage.module.scss"
 const B2BMarketingCard = (props) => {
 
     const displayWorkflow=()=>{
-        let workflow=document.getElementById("workflow")
+        let workflow=document.getElementById(props.key)
         workflow.style.display="block";
     }
     const hideWorkflow=()=>{
-        let workflow=document.getElementById("workflow")
+        let workflow=document.getElementById(props.key)
         workflow.style.display="none";
     }
     return (
@@ -23,9 +23,10 @@ const B2BMarketingCard = (props) => {
                     <props.img /> 
                     {
                         props.workflow!==""?
-                        <div className={styles.seeWorkflow} onClick={displayWorkflow}><span>See Workflow </span><PlusButton /></div>
+                        <div className={styles.seeWorkflow}  onClick={displayWorkflow}><span>See Workflow </span><PlusButton /></div>
                         : ""
                     }
+                    <div className={styles.cardImgHeading}>{props.heading}</div>
                 </div>
                 <div className={styles.contentCard}>
                    <div className={styles.cardHeading} >
@@ -64,7 +65,7 @@ const B2BMarketingCard = (props) => {
                
             </div>
             {
-                    props.workflow!==""?<span className={styles.workflow} id="workflow">
+                    props.workflow!==""?<span className={styles.workflow} id={props.key}>
                     <div><props.workflow /></div>
                     <div className={styles.closeButton} onClick={hideWorkflow}><CloseButton /></div>
                 </span>:""

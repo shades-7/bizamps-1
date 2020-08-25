@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from "../../stylesheets/b2bMarketingPackage.module.scss"
 
 const Card4Img = () => {
     return (
         <>
-           <svg width="443" height="338" viewBox="0 0 576 467" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <svg width="443" height="338" viewBox="0 0 576 467" className={styles.cardImg} fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M91.4698 0.823242L53.3824 74.9955H61.071V135.48H22.323L0 178.951L276.598 320.54L368.068 142.412L91.4698 0.823242Z" fill="#F2F2F2"/>
 <path d="M507.486 49.0732H83.4268V261.49H507.486V49.0732Z" fill="#3F3D56"/>
 <path opacity="0.3" d="M455.922 125.399H142.926V126.119H455.922V125.399Z" fill="#2F80ED"/>
