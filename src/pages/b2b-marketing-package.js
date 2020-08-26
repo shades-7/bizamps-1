@@ -87,6 +87,15 @@ const B2BMarketingPackagePage = (props) => {
                     </div>
           </BackgroundImage >
 
+          <BackgroundImage fluid={props.data.bg4.childImageSharp.fluid} className={styles.container2} >
+               <Navbar logo={props.data.bizampsLogo.childImageSharp.fluid} />
+                    <div className={styles.headerContent2}>
+                        <h1 className={styles.headerTitle2}>Transform your Marketing & LeadGen</h1>
+                        <div className={styles.headerSubtitle2}>Marketing so good that you will ask us to PAUSE!</div>
+                        <button className={styles.headerButton2}>Find How</button>
+                    </div>
+          </BackgroundImage >
+
           <div className={styles.weAreContainer}>
             <div className={styles.weAreBg}><WeAreBg /></div>
             <div className={styles.weAreContent}>
@@ -161,6 +170,14 @@ export default B2BMarketingPackagePage
 export const B2BMarketingPackagePageQuery = graphql`
   query {
     bg2: file(relativePath: { eq: "bgMarketingPackage.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    bg4: file(relativePath: { eq: "bg4.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

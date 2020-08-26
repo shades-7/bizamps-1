@@ -20,13 +20,13 @@ const B2BMarketingCard = (props) => {
         <>
             <div className={styles.cardContainer}>
                 <div className={styles.cardImgContainer}>
+                <div className={styles.cardImgHeading}>{props.heading}</div>
                     <props.img /> 
                     {
                         props.workflow!==""?
                         <div className={styles.seeWorkflow}  onClick={displayWorkflow}><span>See Workflow </span><PlusButton /></div>
                         : ""
                     }
-                    <div className={styles.cardImgHeading}>{props.heading}</div>
                 </div>
                 <div className={styles.contentCard}>
                    <div className={styles.cardHeading} >

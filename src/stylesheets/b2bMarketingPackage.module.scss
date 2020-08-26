@@ -1,3 +1,6 @@
+//--------------------------------------
+//container1
+//--------------------------------------------
 .container{
     //background: linear-gradient(90deg, #2F80ED 42.71%, rgba(47, 128, 237, 0) 84.37%);
     width:100%;
@@ -48,6 +51,65 @@
 .backgroundImg{
     flex:1;
     height:100%;
+}
+//------------------------------------------
+//container2
+//-------------------------------------------
+.container2{
+    display:none;
+    width:100%;
+    margin-top: 0px;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headerContent2{
+    width:90%;
+    margin:auto;
+    margin-top:21rem;
+    margin-bottom: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headerTitle2{
+    width:60%;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #FFFFFF;
+}
+.headerSubtitle2{
+    width:80%;
+    text-align: center;
+    // margin-top: 0.5rem;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+.headerButton2{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding:0.5rem 2.8rem;
+    background: #001735;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    border:none;
 }
 //-----------------------------
 //we Are
@@ -516,6 +578,22 @@ margin-bottom: 2rem;
 }
 
 @media(max-width:1100px){
+    //----------------------------
+    //container
+    //-----------------------------------
+    .headerContent{
+        width:60%;
+    }
+    .headerTitle{
+        font-size:2.5rem;
+        line-height: 3.2rem;
+    }
+    .headerSubtitle{
+        font-size:1.5rem;
+    }
+    .headerButton{
+        margin-top: 2.5rem;
+    }
     //---------------------
     //Cards
     //-----------------------------
@@ -608,6 +686,15 @@ margin-bottom: 2rem;
 }
 
 @media(max-width:726px){
+    //------------------------------
+    //container
+    //----------------------------
+    .container{
+        display:none;
+    }
+    .container2{
+        display:block;
+    }
     //--------------------------
     //card
     //-------------------------
@@ -627,6 +714,11 @@ margin-bottom: 2rem;
     .freeConsultContent button{
         font-size: 0.8rem;
         padding:0.5rem 2.4rem;
+    }
+}
+@media(max-width:650px){
+    .headerContent2{
+        margin-top:17rem;
     }
 }
 @media(max-width:530px){
@@ -712,5 +804,10 @@ margin-bottom: 2rem;
     .location{
         font-size:0.9rem;
         padding:1.2rem;
+    }
+}
+@media(max-width:470px){
+    .headerContent2{
+        margin-top: 21rem;
     }
 }
