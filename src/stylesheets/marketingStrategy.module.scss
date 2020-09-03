@@ -1,0 +1,431 @@
+//------------------------------------------
+//header
+//-----------------------------------------------
+.headerContainer{
+    position: relative;
+    width:100%;
+    height:115vh;
+    margin:0;
+}
+.headerMap{
+    width:60%;
+    height:80%;
+    margin:auto;
+}
+.headerBox{
+    width:100%;
+    height:80%;
+    position: absolute;
+    top:0;
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.headerContent{
+    width:50%;
+    padding:4rem 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;   
+}
+.headerImg{
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    // background:red;
+}
+.headerMobiImg{
+    display:none;
+}
+.headerTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.4rem;
+    color: #FFFFFF;
+}
+.headerSubtitle{
+    padding:2rem 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+    color: #FFFFFF;
+    opacity:0.9;
+}
+.headerButton{
+    margin-top:1rem;
+    background: #001735;
+    border:none;
+    padding:0.8rem 1.2rem;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #FFFFFF;
+}
+.headerButton:hover{
+    cursor: pointer;
+}
+.headerCaption{
+    padding:0.5rem ;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    opacity:0.8;
+}
+//-------------------------------------------
+//Strips
+//-------------------------------------------------
+.strips{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.strip1,.strip2{
+    width: 100%;
+    height:3.1rem;
+}
+.strip1{
+    background: #2F80ED;
+}
+.strip2{
+    background: #FFFFFF;
+}
+//------------------------------------------------
+//Clarity
+//--------------------------------------------------
+.clarityContainer{
+    background: #163C6E;
+    position: relative;
+}
+.clarityImg{
+    width:70%;
+    margin:auto;
+    height:100%;
+    // background: #000000;
+    opacity: 0.5;
+}
+.clarityPlay{
+    position:absolute;
+    z-index:2;
+    top:38%;
+    right:47%;
+}
+.clarityPlay :hover .clarityImg{
+    opacity:0.8;
+}
+//--------------------------------------
+//graph
+//-------------------------------
+.graphContainer{
+    width:100%;
+    padding:2rem;
+    position:relative;
+    background: #FAFAFA;
+}
+.graphContent{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    top:10%;
+    left:6rem;
+}
+.graphTitle{
+    padding:0.5rem 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.7rem;
+    line-height: 3rem;
+    color: #2566BA;
+}
+.graphSubtitle{
+    padding:0.5rem 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: #374F6E;
+}
+//--------------------------------------------
+//samples
+//-----------------------------------------------
+.samplesContainer{
+    width:100%;
+    background: #FAFAFA;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.sampleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding:3rem 6rem;
+     padding-right:2rem;
+}
+.pointContainer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pointKey{
+    width:2.9rem;
+    height:2.9rem;
+    border-radius:50%;
+    background: #2F80ED;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0.5rem 1rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.pointPoint{
+    padding:0.3rem 0.8rem;
+    background: #FFFFFF;
+    border: 1px solid #374F6E;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #374F6E;
+
+}
+
+//--------------------------------
+//workflow
+//----------------------------------
+.workflowMobi{
+display:none;
+}
+
+@media(max-width:1300px){
+    //-------------------------------------------------
+    //header
+    //------------------------------------------------
+    .headerTitle{
+        font-size:2.2rem;
+        line-height: 2.7rem;
+    }
+    .headerSubtitle{
+        font-size:1.3rem;
+        line-height: 1.7rem;
+    }
+    .headerButton{
+        font-size:1rem;
+        line-height: 1.5rem;
+    }
+    .headerCaption{
+        font-size:0.9rem;
+        line-height: 1rem;
+    }
+    //-------------------------------------------
+    //clarity
+    //----------------------------------------------
+    .playButton{
+        width:90px;
+        height:100px;
+    }
+    //--------------------------------------------
+//samples
+//-----------------------------------------------
+    .sampleContainer{
+        padding:3rem 2rem;
+    }
+    .pointPoint{
+        font-size:1rem;
+        line-height: 1.3rem;
+    }
+}
+@media(max-width:950px){
+    //---------------------------
+    //strips
+    //----------------------------
+    .strip1{
+        display:none;
+    }
+    //------------------------------------------------
+    //Clarity
+    //--------------------------------------------------
+    .clarityImg{
+        width:85%;
+    }
+    .playButton{
+        width:70px;
+        height:80px;
+    }
+    //--------------------------
+    //graph
+    //----------------------------
+    .graphContainer{
+        padding:2rem 1rem;
+    }
+    .graphContent{
+        left:3rem;
+    }
+    .graphTitle{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .graphSubtitle{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    //-----------------------
+    //samples
+    //-----------------------------
+    .samplesContainer{
+        flex-direction: column;
+        padding-bottom:2rem;
+    }
+    .sampleContainer{
+        padding:0 2rem;
+    }
+}
+@media(max-width:760px){
+    //-------------------------------------------------
+    //header
+    //------------------------------------------------
+    .headerMap{
+        width:80%;
+    }
+    .headerContent{
+        padding-top:2rem;
+    }
+    .headerTitle{
+        font-size:2rem;
+        line-height: 2.5rem;
+    }
+    .headerSubtitle{
+        font-size:1.1rem;
+        line-height: 1.5rem;
+    }
+    .headerButton{
+        font-size:0.8rem;
+        line-height: 1.25rem;
+    }
+    .headerCaption{
+        font-size:0.8rem;
+        line-height: 1rem;
+    }
+}
+@media(max-width:670px){
+     //-------------------------------------------------
+    //header
+    //------------------------------------------------
+    .headerMap{
+        width:100%;
+        height:100%;
+    }
+    .headerImg{
+        display:none;
+    }
+    .headerMobiImg{
+        display:block;
+    }
+    .headerContent{
+        width:90%;
+        margin:auto;
+        align-items: center;
+    }
+    .headerTitle{
+        font-size:2rem;
+        line-height: 2.5rem;
+        text-align:center
+    }
+    .headerSubtitle{
+        font-size:1.1rem;
+        line-height: 1.5rem;
+        text-align:center;
+        opacity:1;
+    }
+    .headerButton{
+        font-size:0.8rem;
+        line-height: 1.25rem;
+    }
+    .headerCaption{
+        font-size:0.8rem;
+        line-height: 1rem;
+    }
+}
+@media(max-width:600px){
+      //------------------------------------------------
+    //Clarity
+    //--------------------------------------------------
+    .clarityImg{
+        width:100%;
+    }
+     //--------------------------
+    //graph
+    //----------------------------
+    .graphContent{
+        left:1.7rem;
+    }
+    .graphTitle{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .graphSubtitle{
+        padding:0.1rem 0;
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    //---------------------------------
+    //samples
+    //-----------------------------------
+    .sampleContainer{
+        padding:0 0.5rem;
+    }
+    .pointKey{
+        width:2.3rem;
+        height:2.3rem;
+        margin:0.3rem 0.6rem;
+        font-size: 1rem;
+    }
+    .pointPoint{
+        font-size: 0.8rem;
+    }
+    //--------------------------------------
+    //workflow
+    //-------------------------------------
+    .workflow{
+        display:none;
+    }
+    .workflowMobi{
+        display:block;
+    }
+}
+@media(max-width:500px){
+     //-------------------------------------------
+    //clarity
+    //----------------------------------------------
+    .playButton{
+        width:60px;
+        height:60px;
+    }
+}

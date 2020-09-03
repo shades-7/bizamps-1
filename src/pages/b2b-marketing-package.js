@@ -4,11 +4,13 @@ import { Link,graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 import Img from 'gatsby-image'
 
-import Testimonial from "../components/Testimonial"
-import Team from "../components/Team"
-import Navbar from "../components/Navbar"
-import B2BMarketingCard from "../components/B2BMarketingCard"
-import WeAreCard from "../components/WeAreCard"
+import Testimonial from "../components/Testimonial/Testimonial"
+import Team from "../components/Team/Team"
+import Navbar from "../components/Navbar/Navbar"
+import B2BMarketingCard from "../components/B2BMarketingPage/B2BMarketingCard"
+import WeAreCard from "../components/B2BMarketingPage/WeAreCard"
+import Location from "../components/Location/Location"
+import Footer from '../components/Footer/footer'
 
 import FreeConsult from "../assets/B2BMarketingPackages/FreeConsult"
 import PaidConsult from "../assets/B2BMarketingPackages/PaidConsult"
@@ -158,9 +160,10 @@ const B2BMarketingPackagePage = (props) => {
         shweta={props.data.shweta.childImageSharp.fluid}
         />
 
-        <div className={styles.location}>
-          Home {">>"} Pricing {">>"} <span className={styles.end}>B2B Marketing Packages</span>
-        </div>
+        <Location first="Home" second="Pricing" third="B2B Marketing Packages" />
+
+        <Footer />
+
         </Layout>
     )
 }

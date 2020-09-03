@@ -253,7 +253,8 @@ margin-bottom: 2rem;
     z-index:5;
     //background-color: red;
     width:100%;
-    display: none;
+    height:80vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     position :relative;
@@ -332,20 +333,7 @@ margin-bottom: 2rem;
     color: #FFFFFF;
     opacity: 0.7;
 }
-//-----------------------
-//location
-//---------------------------
-.location{
-    font-family: Roboto;
-    font-style: normal;
-    text-align: center;
-    padding: 2rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-.end{
-    color:#2F80ED;
-}
+
 //------------------------------
 //Paid consult
 //------------------------------
@@ -679,10 +667,7 @@ margin-bottom: 2rem;
 .freeConsultBg{
     height:100%;
 }
-.location{
-    font-size:1.2rem;
-    padding:1.7rem;
-}
+
 }
 
 @media(max-width:726px){
@@ -701,6 +686,9 @@ margin-bottom: 2rem;
     .cardImgHeading{
         width:95%;
     }
+    .workflow{
+        height:60vh;
+    }
     //-------------------------
     //freeConsult
     //-----------------------------
@@ -717,6 +705,9 @@ margin-bottom: 2rem;
     }
 }
 @media(max-width:650px){
+    .container2{
+        height:120vh;
+    }
     .headerContent2{
         margin-top:17rem;
     }
@@ -798,13 +789,7 @@ margin-bottom: 2rem;
         font-size: 0.8rem;
         padding:0.3rem 2rem;
     }
-    //------------------------------
-    //location
-    //------------------------
-    .location{
-        font-size:0.9rem;
-        padding:1.2rem;
-    }
+    
 }
 @media(max-width:470px){
     .headerContent2{

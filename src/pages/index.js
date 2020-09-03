@@ -5,12 +5,13 @@ import SEO from "../components/seo"
 import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
 
-import IndexHeaderCard from "../components/IndexHeaderCard"
-import IndexProcessCard from '../components/IndexProcessCard'
-import IndexPackage from "../components/IndexPackage"
-import Testimonial from "../components/Testimonial"
-import Navbar from "../components/Navbar"
-import Team from "../components/Team"
+import IndexHeaderCard from "../components/IndexPage/IndexHeaderCard"
+import IndexProcessCard from '../components/IndexPage/IndexProcessCard'
+import IndexPackage from "../components/IndexPage/IndexPackage"
+import Testimonial from "../components/Testimonial/Testimonial"
+import Navbar from "../components/Navbar/Navbar"
+import Team from "../components/Team/Team"
+import Footer from '../components/Footer/footer'
 
 import HelpB2BClients from "../assets/indexPage/HelpB2Bclients"
 import EasilyIcon from "../assets/indexPage/EasilyIcon"
@@ -121,6 +122,8 @@ const IndexPage = (props) => {
       anvishka={props.data.anvishka.childImageSharp.fluid} 
       shweta={props.data.shweta.childImageSharp.fluid}
       />
+
+<Footer />
      
   </Layout>
   )

@@ -1,0 +1,31 @@
+//-----------------------
+//location
+//---------------------------
+.location{
+    font-family: Roboto;
+    font-style: normal;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.end{
+    color:#2F80ED;
+}
+
+@media(max-width:940px){
+    .location{
+        font-size:1.2rem;
+        padding:1.7rem;
+    }
+}
+
+@media(max-width:530px){
+    //------------------------------
+    //location
+    //------------------------
+    .location{
+        font-size:0.9rem;
+        padding:1.2rem;
+    }
+}

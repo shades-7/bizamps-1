@@ -1,0 +1,157 @@
+.headerContainer{
+    background:#313131;
+    width:100%;
+    height:115vh;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.logoContainer{
+    width:15%;
+    padding:3rem 0rem;
+}
+.logo{
+    width:60%;
+    margin:auto;
+}
+.contentContainer{
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #2F80ED;
+    padding:3rem 2rem;
+}
+.title{
+    padding:0.8rem 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.3rem;
+    color: #FFFFFF;
+}
+.subtitle{
+    padding:0.5rem 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    opacity:0.8;
+    margin-bottom: 1rem;
+}
+.content div{
+    padding:0.7rem 0;
+    display:flex;
+    flex-direction: column;
+}
+.content span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
+.content button{
+    padding:0.5rem 1.5rem;
+    margin:2rem 0;
+    background: #000000;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    color: #FFFFFF;
+    align-items: center;
+    border:none;
+    cursor: pointer;
+}
+.bookMobiContainer{
+    display:none;
+}
+.bookContainer{
+    width:45%;
+    padding:3rem 0rem;
+}
+.book{
+    width:90%;
+    height:80%;
+    margin:auto;
+}
+.footer{
+    width:100%;
+    height:12vh;
+    background: #232323;
+}
+
+@media(max-width:1250px){
+    .title{
+        font-size:2.5rem;
+        line-height: 2.8rem;
+    }
+    .subtitle{
+        font-size:1.3rem;
+        line-height: 1.5rem;
+    }
+    .content div{
+        padding:0.5rem 0;
+    }
+    .content span{
+        font-size:1.3rem;
+        line-height: 1.7rem;
+    }
+    .content button{
+        margin:1.7rem 0;
+        padding:0.4rem 1.3rem;
+        font-size:1.1rem;
+        line-height: 1.5rem;
+    }
+}
+@media(max-width:900px){
+    .headerContainer{
+        flex-direction: column;
+        height:170vh;
+    }
+    .logoContainer{
+        width:100%;
+        padding:1.5rem;
+    background: #2F80ED;
+    }
+    .logo{
+        width:20%;
+    }
+    .contentContainer{
+        width:100%;
+        flex:1;
+    background:#313131;
+    align-items: center;
+    text-align: center;
+
+    }
+    .bookContainer{
+        display:none;
+    }
+    .bookMobiContainer{
+        display:block;
+        width:60%;
+        margin:1.1rem auto;
+    }
+    .content button{
+    background: #2F80ED;
+        padding:0.6rem 1.3rem;
+        font-size:1.6rem
+    }
+}
+@media(max-width:560px){
+    .logo{
+        width:40%;
+    }
+    .bookMobiContainer{
+        width:80%;
+    }
+}
