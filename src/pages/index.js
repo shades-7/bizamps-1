@@ -57,7 +57,7 @@ const IndexPage = (props) => {
         <div className={styles.headerContent}>
           <div className={styles.content}>
            <h1 className={styles.contentHeading}>We help our B2B clients to</h1>
-           < IndexHeaderCard title="Get into Dream Accounts" subtitle="Easily" icon={<EasilyIcon />} />
+           <IndexHeaderCard title="Get into Dream Accounts" subtitle="Easily" icon={<EasilyIcon />} />
            <IndexHeaderCard title="Accelerate Sales Pipelines" subtitle="Systematically" icon={<QualitativeIcon />} />
            <IndexHeaderCard title="Create Leads that Sales love" subtitle="Qualitatively" icon={<SystematicIcon />} />
           </div>
