@@ -7,7 +7,7 @@ import Img from 'gatsby-image'
 import Location from "../components/Location/Location"
 import Team from "../components/Team/Team"
 import Testimonial from "../components/Testimonial/Testimonial"
-import Navbar from "../components/Navbar/Navbar"
+import Navbar from "../components/navbar/Navbar"
 import Footer from '../components/Footer/footer'
 
 import Workflow from "../assets/MarketingStrategy/Workflow"
