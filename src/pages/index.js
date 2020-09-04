@@ -9,7 +9,7 @@ import IndexHeaderCard from "../components/IndexPage/IndexHeaderCard"
 import IndexProcessCard from '../components/IndexPage/IndexProcessCard'
 import IndexPackage from "../components/IndexPage/IndexPackage"
 import Testimonial from "../components/Testimonial/Testimonial"
-import Navbar from "../components/Navbar/Navbar"
+import Navbar from "../components/navbar/Navbar"
 import Team from "../components/Team/Team"
 import Footer from '../components/Footer/footer'
 

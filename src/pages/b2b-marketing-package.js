@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 
 import Testimonial from "../components/Testimonial/Testimonial"
 import Team from "../components/Team/Team"
-import Navbar from "../components/Navbar/Navbar"
+import Navbar from "../components/navbar/Navbar"
 import B2BMarketingCard from "../components/B2BMarketingPage/B2BMarketingCard"
 import WeAreCard from "../components/B2BMarketingPage/WeAreCard"
 import Location from "../components/Location/Location"
