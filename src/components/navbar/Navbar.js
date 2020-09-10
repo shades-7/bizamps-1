@@ -20,19 +20,24 @@ const Navbar=(props)=>{
       name : 'Expertise',
       subOptions : [
         {
-          name : '[Guide] Best of ABM'
+          name : '[Guide] Best of ABM',
+          link : "/i-went-through-every-account-based-marketing-webinar-talk-ebook-and-heres-the-best-of-them"
         },
         {
-          name : '[Guide] LeadGen Cold outreach'
+          name : '[Guide] LeadGen Cold outreach',
+          link : "/cold"
         },
         {
-          name : '[Blog] Value In Sales?'
+          name : '[Blog] Value In Sales?',
+          link : ""
         },
         {
-          name : '[Blog] When to Outsource LeadGen?'
+          name : '[Blog] When to Outsource LeadGen?',
+          link : ""
         },
         {
-          name : '[Blog] Expectations for Outsourcing LeadGen?'
+          name : '[Blog] Expectations for Outsourcing LeadGen?',
+          link : ""
         },
       ]
     },
@@ -40,10 +45,12 @@ const Navbar=(props)=>{
       name : 'Pricing',
       subOptions : [
         {
-          name : 'B2B Marketing Packages'
+          name : 'B2B Marketing Packages',
+          link : "/b2b-marketing-package"
         },
         {
-          name : 'Marketing Strategy Consultancy'
+          name : 'Marketing Strategy Consultancy',
+          link : "/custom-digital-sales-marketing-plan"
         },
       ]
     },
@@ -51,16 +58,20 @@ const Navbar=(props)=>{
       name : 'Case Stories',
       subOptions : [
         {
-          name : 'Indian Enterprises'
+          name : 'Indian Enterprises',
+          link : ""
         },
         {
-          name : 'International Institutes'
+          name : 'International Institutes',
+          link : ""
         },
         {
-          name : 'Targeting U.S.'
+          name : 'Targeting U.S.',
+          link : ""
         },
         {
-          name : 'Crowd Funding'
+          name : 'Crowd Funding',
+          link : ""
         },
       ]
     }

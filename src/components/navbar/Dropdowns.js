@@ -19,7 +19,7 @@ const Dropdowns = (props) => {
                 {
                     props.option.subOptions.map((item,index)=>{
                         return (
-                            <Link key={index}>{item.name}</Link>
+                            <Link to={item.link} key={index}>{item.name}</Link>
                         )
                     })
                 }
