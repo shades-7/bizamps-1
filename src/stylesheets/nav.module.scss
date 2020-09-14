@@ -165,3 +165,10 @@
         display:block;
     }
 }
+
+@media(max-width:530px){
+    .logo{
+        width:110px;
+        height:1.5rem;
+    }
+}
