@@ -87,3 +87,31 @@
         margin-bottom: 10px;
     }
 }
+
+@media(max-width:470px){
+    .footerContainer{
+        padding:20px 20px;
+    }
+   .socio-icon{
+       height: 20px;
+       width: 20px;
+   }
+   .footerContainer .icons{
+    margin:0px 6px;
+   }
+   .footerContainer hr{
+    margin: 10px;
+   }
+   .footerContainer .title,.subtitle{
+       margin-top: 10px;
+       font-size: 0.8rem;
+       line-height: 0.8rem;
+   }
+   .footerContainer .subtitle{
+       margin-bottom: 3px;
+   }
+   
+  
+}
+
+

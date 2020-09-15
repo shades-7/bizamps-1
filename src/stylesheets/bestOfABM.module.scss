@@ -340,3 +340,128 @@
     height:3rem;
     width:100%;
 }
+
+@media(max-width:470px){
+    //--------------------------------
+    //header
+    //------------------------------------
+    .headerContainer{
+        flex-direction: column;
+    }
+    .headerImgBox{
+        width:100%;
+        padding:3rem;
+    }
+    .headerContent{
+        width:100%;
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
+    .headerTitle{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .headerSubtitle{
+        text-align: center;
+        font-size: 1rem;
+
+    }
+    //--------------------------------------
+    //video
+    //----------------------------------------
+    .videoTitle{
+        font-size: 1.2rem;
+        line-height:1rem;
+    }
+    .video{
+        width:100%;
+        padding:1.3rem 0 1.5rem 0;
+    }
+    //-------------------------------------
+    //toc
+    //--------------------------------------
+    .tocHeading{
+        font-size: 1.3rem;
+        text-align: left;
+        padding:1rem 5rem 1rem 1rem;
+    }
+    .tocContentContainer{
+        padding:1rem 1rem 1rem 1rem;
+    }
+    .tocNum{
+        font-size: 1rem; 
+        padding: 0rem 0.7rem;
+        border-radius: 6px;
+    }
+    .tocName{
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    //--------------------------------------------
+    //tableOfContent
+    //---------------------------------------------
+    .tableOfContentBox{
+        padding: 1rem 1rem 1rem 1rem;
+        margin:0.5rem 0;
+    }
+    .num{
+        padding: 0.1rem 0.7rem;
+        font-size: 1.3rem;
+    }
+    .nameBox{
+        padding: 0 1rem;
+    }
+    .name{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .subname{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .innerContentBox{
+        padding:1rem;
+    }
+    .info{
+        width:100%;
+        padding:1rem 0.5rem;
+    }
+    .imgBox{
+        width:90%;
+        margin-bottom: 0rem;
+    }
+    .key{
+        font-size:1rem;
+        height:20%;
+        padding:0.3rem 0.3rem;
+        
+     }
+    .heading,.subheading{
+        font-size: 1rem;
+    }
+    .points{
+        width:100%;
+        font-size:0.8rem;
+        line-height: 1rem;
+    }
+    .caption{
+        font-size:0.8rem;
+        line-height: 1rem;
+    }
+    //------------------------------------
+    //quote
+    //---------------------------------
+    .quote{
+        font-size: 1rem;
+    }
+    //-------------------------------
+    //infoOverload
+    //-------------------------------------
+    .infoOverloadTitle{
+        font-size:1rem;
+    }
+    .infoOverloadImg{
+        width:100%;
+    }
+}

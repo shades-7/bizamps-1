@@ -975,7 +975,9 @@ const BestOfABM = (props) => {
 
             <div className={styles.headerContainer}>
               <div className={styles.headerImgBox}>
-                <div className={styles.headerImgBg}><DpBg /></div>
+                <div className={styles.headerImgBg} >
+                  <Img fluid={props.data.headerImg.childImageSharp.fluid} /> 
+                </div>
                 {/* <Img className={styles.headerImg} /> */}
               </div>
               <div className={styles.headerContent}>
@@ -1444,6 +1446,14 @@ export const B2BMarketingPackagePageQuery = graphql`
     }
 
     infoOverload : file(relativePath: { eq: "infoOverload.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    headerImg : file(relativePath: { eq: "headerImg.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

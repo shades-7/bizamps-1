@@ -1,8 +1,8 @@
 var plugins = [{
-      plugin: require('C:/Users/shweta/Desktop/projects/Bizamps-V3/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/shades/Desktop/projects/bizamps-1/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/shweta/Desktop/projects/Bizamps-V3/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/shades/Desktop/projects/bizamps-1/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/bizampsLogo.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"6a613b8e708c6126bf3cbc53a42c524c"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
