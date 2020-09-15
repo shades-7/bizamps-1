@@ -7,7 +7,7 @@ const IndexProcessCard = (props) => {
         <div className={styles.processCard}>
             <div className={styles.processTitle}>{props.title}</div>
             <div className={styles.processSubtitle}>{props.subtitle}</div>
-            <button style={{backgroundColor:"white",padding:"0.5rem 1.3rem",marginTop:"1rem",borderRadius:"10px"}}>Know More</button>
+            <button className={styles.processButton} >Know More</button>
         </div>
     )
 }
